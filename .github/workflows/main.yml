@@ -35,7 +35,7 @@ jobs:
       with:
         java-version: 8
     - name: Analyze with NG SAST
-      run: ${GITHUB_WORKSPACE}/sl analyze --app ShiftLeftJava --tag branch=${GITHUB_REF} --java --cpg target/hello-shiftleft-0.0.1.jar
+      run: ${GITHUB_WORKSPACE}/sl analyze --app ShiftLeftJava --tag branch=${GITHUB_REF} --java --cpg target/benchmark.war
       env:
         SHIFTLEFT_ORG_ID: ${{ secrets.SHIFTLEFT_ORG_ID }}
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
