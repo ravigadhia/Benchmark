@@ -3,8 +3,8 @@
 name: Analyze with ShiftLeft NG SAST
 
 on:
-  schedule:
-    - cron: "0 * * * *"  
+#  schedule:
+#    - cron: "0 * * * *"  
   push: # include to analyze when you push
     branches:
       - master
